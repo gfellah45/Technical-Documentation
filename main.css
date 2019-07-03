@@ -1,0 +1,114 @@
+:root{
+    background: radial-gradient(at top left, #e5d0ad, #d2af73);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.6;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+.main-navbar-container{
+    position: fixed;
+    padding: 3px;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: 2px solid black;
+
+}
+.main-section-container{
+    position: absolute;
+    left: 330px;
+    margin: 0;
+    padding: 0;
+}
+.main-navbar-container ul{
+    margin: 5px;
+    padding: 0px;
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.main-navbar-container li{
+    list-style-type: none;
+    margin-top: 10px;
+    border-top: 2px solid black;
+}
+.main-navbar-container a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.main-section header{
+    font-size: 1.5rem;
+    text-align: left;
+}
+section article {
+    color: black;
+    margin: 15px;
+    font-size: 0.96em;
+}
+section p{
+    line-height: 1.2;
+    margin: 5px;
+    padding: 10px;
+}
+
+section li{
+    position: relative;
+    left: 70px;
+}
+code {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+@media(max-width: 500px){
+    .main-navbar-container{
+        position: absolute;
+        padding: 0px;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 70%;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+        border-top: 0.5px solid black;
+        border-bottom: 0.5px solid black;
+    }
+    .main-section-container{
+        position: relative;
+        top: 500px;
+        left: 0px;
+    }
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+      }
+      body{
+          width: 400px;
+          margin: 0;
+          padding: 0;
+      }
+
+}
